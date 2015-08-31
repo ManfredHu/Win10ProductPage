@@ -1,0 +1,300 @@
+@charset "UTF-8";
+/******************全局reset******************/
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 16px;
+	vertical-align: baseline;
+	background: transparent;
+	font-family:"Microsoft YaHei",Arial,sans-serif;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+/******************公共样式*******************/
+/*居中*/
+.center{
+	width:1000px;
+	margin:0px auto;
+}
+/*标题样式*/
+h1,h2,h3,h4,h5,h6{
+	font-weight: 100;
+	font-family: "Segoe UI",Tahoma,Helvetica,sans-serif;
+}
+/*取消链接下划线*/
+a{
+	text-decoration: none;
+}
+/*链接悬停效果*/
+.picture-list a:hover{
+	color:#32145A;
+}
+/*字体颜色（除链接外大部分会继承）*/
+div.pic,div.big-adv,div.product,div.see-more,div.win-office-detail{
+	color:#505050;
+}
+
+/******************navigator部分**************/
+div#nav{
+	width:100%;
+	margin:0px auto;
+	background: #0078D7;
+	height:70px;
+	color:#fff;
+}
+div#nav ul{
+	position: relative;
+	left:-16px;
+	overflow: hidden;
+	width:1260px;
+	margin:0px auto;
+}
+div#nav ul li{
+	float:left;
+	display: inline;
+}
+div#nav a{
+	height:70px;
+	line-height:70px;
+	display: inline;
+	float:left;
+	text-align: center;
+	color:#fff;
+	padding:0 20px;
+}
+/*导航悬停*/
+div#nav a:hover{
+	background:#006CC1;
+}
+/*当前页*/
+div#nav a.nav-now{
+	background:#005494;
+}
+/*win-logo*/
+div#nav a.windows-logo{
+	position:relative;
+	top:20px;
+	/*left:50%;*/
+	/*margin-left:-682px;*/
+	/*z-index:9;*/
+	padding:0px;
+	line-height:0px; /*解决a标签不能包裹img的问题*/
+	width:128px;
+	height:25px;
+}
+div#nav a.windows-logo:hover{
+	background: #0078D7;
+}
+
+/******************small-nav部分**************/
+div#small-nav{
+	width:100%;
+	background:#005494;
+	overflow: hidden;
+	height:30px;
+}
+div#small-nav a{
+	color:#fff;
+	display: inline;
+	float:left;
+	height:30px;
+	line-height: 30px;
+	text-align: center;
+	font-size:13px;
+	padding:0px 10px;
+	position: relative;/*对齐左边*/
+	left:-6px;
+}
+
+/*******************h1标题部分****************/
+h1{
+	color:#0078D7;
+	height:210px;
+	line-height:210px;
+	font-size: 44px;
+}
+
+/************advertisement部分****************/
+div#adv{
+	background: #0078D7;
+	color:#fff;
+	padding-bottom: 50px;
+}
+div#adv div.center{
+	position: relative;
+}
+div#adv h2{
+	font-size: 44px;
+	width:340px;
+	padding:60px 0px;
+}
+div#adv p{
+	width:540px;
+	line-height: 1.5em;
+	font-size: 14px;
+}
+div#adv a,div.big-adv a{
+	color:#fff;
+	background:#5c2d91;
+	line-height:30px;
+	text-align: center;
+	margin-top:30px;
+	display: inline-block;
+	padding: 2px 12px 4px 13px;;
+}
+div#adv a:hover,div.big-adv a:hover{
+	background: #32145A;
+}
+div#adv input:hover,div#adv input:active{
+	background:#32145A;
+}
+div#adv img{
+	position: absolute;
+	top:20px;
+	right:0px;
+}
+
+/***************图片列表第一部分****************/
+div.pic{
+	margin-top:60px;
+}
+div.pic h3,div.big-adv h3,div.product h3{
+	font-size: 32px;
+	margin-bottom:15px;
+}
+ul.picture-list{
+	overflow: hidden;
+	margin-right: -30px;
+	_zoom:1; /*IE6hack*/
+}
+ul.picture-list li{
+	width:227px;
+	float:left;
+	display: inline;
+	margin-right:30px;
+}
+div.pic h4{
+	margin-top:20px;
+}
+div.pic p{
+	font-size:13px;
+	margin-top:5px;
+}
+div.pic a{
+	color:#0072c6;
+	display: block;
+	font-size: 13px;
+	margin-top:15px;
+}
+div.pic a.mar-top{
+	margin-top:25px;
+}
+
+/***************图片列表第二部分****************/
+div.pic div.other,div.big-adv{
+	margin-top:90px;
+}
+
+/**********图片列表下面部分(部分同上)***********/
+div.big-adv{
+	position: relative;
+}
+div.big-adv p{
+	font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 15px;
+    width:484px;
+}
+div.big-adv img{
+	position: absolute;
+	top:47px;
+	right:0px;
+	width:484px;
+}
+
+/**********保护和加强电脑部分(部分同上)***********/
+div.product{
+	margin-top:200px;
+}
+div.product a,div.see-more a{
+	color:#0072c6;
+	font-weight: 600;
+	font-size:16px;
+	line-height: 1.4em;
+}
+div.product p,div.see-more p{
+	margin-top:5px;
+	font-size: 13px;
+	line-height: 1.4em;
+}
+
+/**********See more部分(部分同上)***********/
+div.see-more{
+	margin-top:85px;
+}
+p.para{
+	font-size: 12px;
+}
+div.see-more a{
+	font-weight: 400;
+}
+div.see-more h5{
+	padding-top:50px;
+	padding-bottom:10px;
+	border-bottom:1px solid #D2D2D2;
+	margin-bottom:15px;
+}
+
+/*********Windows Offer Details部分(部分同上)***********/
+div.win-office-detail{
+	margin-top:95px;
+	padding:20px 0px 37px 0px;
+	background: #F0F0F0;
+	clear:both;
+}
+div.win-office-detail h6{
+	font-weight: 700;
+	font-size: 11px;
+}
+div.win-office-detail p{
+	margin-top: 15px;
+	line-height: 1.4em;
+	font-size: 11px;
+}
+div.win-office-detail a{
+	color:#0072c6;
+	font-size: 11px;
+}
+div.win-office-detail a:hover{
+	color:#32145A;
+}
+
+/*********footer部分***********/
+div#footer{
+	background:#2F2F2F;
+	color:#fff;
+	height:35px;
+	line-height:35px;
+	text-align: center;
+}
+div#footer p{
+	font-size:14px;	
+}
+
+
+
+
+
+
+
+
+
+
+
