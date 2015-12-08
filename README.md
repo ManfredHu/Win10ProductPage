@@ -10,5 +10,5 @@
 兼容IE6+以上主流浏览器
 好像微软自己的官网都不再支持IE9以下浏览器了-_-!!
 
-[微软官网链接](http://windows.microsoft.com/en-us/windows/downloads)
+[微软官网链接(需翻墙)](http://windows.microsoft.com/en-us/windows/downloads)
 
